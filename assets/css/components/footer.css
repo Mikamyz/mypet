@@ -1,0 +1,11 @@
+/* === Footer === */
+
+.main-footer {
+  flex-direction: column;
+  background-color: var(--W-80);
+  padding: 64px 15px;
+}
+
+.main-footer .social-media {
+  padding: 40px;
+}

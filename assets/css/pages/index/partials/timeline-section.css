@@ -1,0 +1,8 @@
+.timeline-section {
+  text-align: center;
+}
+
+.timeline-section h2,
+p {
+  margin: 16px 0;
+}

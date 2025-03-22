@@ -1,0 +1,134 @@
+/* Imports */
+
+/* Global */
+@import"/assets/css/global/normalize.css";
+@import"/assets/css/global/fonts.css";
+@import"/assets/css/global/variables.css";
+
+/* Components */
+@import"/assets/css/components/header.css";
+@import"/assets/css/components/footer.css";
+
+/* Pages */
+@import"/assets/css/pages/index/index.css";
+
+/* Global Styles */
+.container {
+  max-width: 1140px;
+  padding: 64px 15px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-md {
+  font-size: var(--display-md);
+  line-height: 1.2;
+}
+
+.social-media {
+  display: flex;
+  gap: 16px;
+}
+
+.social-media i {
+  color: var(--d-60);
+  font-size: var(--h2);
+  border-radius: 30px;
+  transition: all 200ms ease;
+  padding: 8px;
+}
+
+.social-media i:hover {
+  color: var(--white);
+  background-color: var(--primary-dark);
+  transform: translate(-2px);
+  border-radius: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 24px;
+  font-size: var(--body-sm);
+  font-weight: 600;
+  transition: all 200ms ease;
+  border-radius: 40px;
+}
+
+.btn-primary {
+  background-color: var(--primary-600);
+  color: white;
+}
+
+/* === Inputs === */
+
+label {
+  font-size: var(--body-small);
+  display: block;
+  margin: 20px 0 16px 0;
+  color: var(--d-60);
+}
+
+input {
+  max-width: 420px;
+  padding: 16px;
+  border: 1px solid var(--d-20);
+  border-radius: 4px;
+}
+
+input:focus {
+  outline-color: var(--p-100);
+  background-color: transparent;
+}
+
+
+.grid:nth-child(1) {
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+}
+
+.grid:nth-child(2) {
+  grid-column: 2/3;
+}
+
+.grid>img {
+  width: 640px;
+  height: 433px;
+  object-fit: cover;
+}
+
+
+
+
+
+.btns {
+  background-color: #7B61FF;
+  color: #fff;
+  width: 215px;
+  height: 46px;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  transition: all 200ms ease;
+  font-weight: 600;
+  letter-spacing: .5px;
+}
+
+.btns:hover {
+  background-color: #9581FF;
+}
+
+.btns:active {
+  background-color: #B0A0FF;
+}

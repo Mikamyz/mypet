@@ -1,0 +1,34 @@
+/* Fonts 
+- Font Family
+- Displays Headlines Sizes
+- Headline Font Sizes
+- Body Font Sizes
+obs: converter pra rem dps
+*/
+:root {
+
+  --font-family: 'DM Sans', sans-serif;
+
+  --display-lg: 48px;
+  --display-md: 36px;
+
+  --body-md: 16px;
+  --body-sm: 14px;
+}
+
+
+/* Colors 
+- Primay
+- Neutral
+*/
+
+:root {
+
+  --primary-600: #138854;
+
+  --neutral-50: #F9FAFB;
+  --neutral-500: #6B7280;
+  --neutral-800: #1F2937;
+  --neutral-700: #374151;
+
+}

@@ -5,17 +5,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Seo -->
-  <meta name="description" content="Campanha de vacinação contra a raiva 2025" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Mypet | Campanha de vacinação contra a raiva 2025" />
-  <meta property="og:description" content="Vacinação contra a raiva 2025" />
-  <meta property="og:url" content="http://mypet.com" />
-  <meta property="og:image" content="/" />
   <!-- Css -->
   <link rel="stylesheet" href="/assets/css/global/global.css">
   <!-- Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
   <!-- Fav Icon -->
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
   <title>MyPets - Campanha de vacinação contra a raiva 2025</title>
@@ -23,39 +16,41 @@
 
 <body>
 
-  <!-- Header -->
-  <header class="main-header flex">
+  <!-- Header Section -->
+  <header class="flex">
+    <!-- Logo -->
     <a href="index.html">
       <img src="/assets/img/logo.svg" alt="Logo da MyPets" />
     </a>
     <nav id="navbar">
-      <!-- = menu ham = -->
+      <!-- Responsive Menu -->
       <button id="btn-mobile">
         <span id="ham-btn"></span>
       </button>
-
+      <!-- Nav Links -->
       <ul class="nav-links flex" id="nav-links">
         <li>
-          <a href="#home" class="nav-link">Home</a>
+          <a href="#home" class="nav-link active">Home</a>
         </li>
         <li>
-          <a href="#sobre" class="nav-link">Sobre</a>
+          <a href="#campanha" class="nav-link">Campanha</a>
         </li>
         <li>
-          <a href="#cronograma" class="nav-link">Cronograma</a>
+          <a href="#servicos" class="nav-link">Serviços</a>
         </li>
         <li>
           <a href="#equipe" class="nav-link">Equipe</a>
         </li>
         <li>
-          <a href="#duvidas" class="nav-link">Dúvidas</a>
+          <a href="#equipe" class="nav-link">Testemunhos</a>
         </li>
         <li>
-          <a href="ficha.html" class="nav-link">Ficha Online</a>
+          <a href="#duvidas" class="nav-link">Dúvidas</a>
         </li>
       </ul>
+      <!-- Btn Cta -->
       <div class="btn-container">
-        <a href="/ficha.html" class="btn btn-primary">Ficha Online</a>
+        <a href="/agendamento.html" class="btn btn-sm btn-primary">Agendar Vacinação</a>
       </div>
     </nav>
   </header>
@@ -63,47 +58,60 @@
   <!-- Hero Section -->
   <section class="hero-section container" id="home">
     <div>
-      <h1>Porque é importante vacinar meu pet?</h1>
-      <p>
-        A vacinação é um cuidado essencial, pois por meio
-        dela seu pet fica protegido de doença infecciosas
-        que podem até ser fatais.
-      </p>
-      <a href="/ficha.html" class="btn btn-primary">Vacinar meu pet</a>
+      <h1 class="display-lg">Vacinação Pet - Proteja seu melhor amigo</h1>
+      <p class="body-xl">Garanta a saúde e felicidade do seu pet com nossos serviços de vacinação</p>
+      <a href="/ficha.html" class="btn btn-lg btn-primary">Agende sua vacinação</a>
     </div>
-    <div>
+    <div class="flex-center">
       <img src="./assets/img/hero-img.png" alt="#">
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="about-section container" id="sobre">
-    <img src="/assets/img/about-img.png" alt="#">
+  <!-- Campaign Section -->
+  <section class="campaign-section container" id="campanha">
+    <!-- Campaign Image -->
+    <img src="/assets/img/campaign-img.png" alt="#">
     <div>
-      <h2 class="display-md">É gratuito a proteção para seu pet.</h2>
-      <p>
-        A campanha é necessária para cuidar dos nossos
-        pets, pois promove proteção contra a raiva que
-        pode ser fatal, vacinar seu animal é de extrema
-        importância pois assim você protege ele e outros
-        animais.
-      </p>
-      <a href="#" class="btn btn-primary">Saiba Mais</a>
+      <h2 class="display-lg">Proteja quem você ama!</h2>
+      <div class="text-box">
+        <p>
+          A raiva é uma doença viral grave que afeta mamíferos, incluindo cães, gatos e humanos. Transmitida
+          principalmente por mordidas, a raiva pode ser fatal, mas é 100% prevenível com a vacinação.
+        </p>
+        <p>Pensando na saúde do seu pet e na segurança de todos, nossa clínica, em parceria com [Nome do Patrocinador],
+          está oferecendo vacinação gratuita contra a raiva para cães e gatos.
+        </p>
+      </div>
+      <div>
+        <h3 class="display-xs">Como funciona?</h3>
+        <ul class="flex">
+          <li class="flex">
+            <i class="ri-check-line"></i>
+            <p class="body-lg">Campanha válida para cães e gatos acima de 3 meses</p>
+          </li>
+          <li class="flex">
+            <i class="ri-check-line"></i>
+            <p class="body-lg">Vacina segura, aplicada por profissionais qualificados</p>
+          </li>
+          <li class="flex">
+            <i class="ri-check-line"></i>
+            <p class="body-lg">Totalmente gratuita! Basta agendar seu horário</p>
+          </li>
+        </ul>
+      </div>
     </div>
-  </section>
-
-  <!-- Timeline Section -->
-  <section class="timeline-section container" id="cronograma">
-    <h2 class="display-md">Cronograma</h2>
-    <a href="/ficha.html" class="btn btn-primary">Faça sua Ficha</a>
-    <p>Em Breve</p>
+    <!-- CTA -->
+    <div class="cta">
+      <h4 class="display-xs">Não perca essa oportunidade! <a href="agendamento.html" class="display-xs">Agende agora e
+          proteja
+          seu pet.</a>💚
+      </h4>
+    </div>
   </section>
 
   <!-- FAQ -->
-  <section class="duvidas faq-section" id="duvidas">
-    <div>
-      <h2 class="display-md">Dúvidas</h2>
-    </div>
+  <section class="faq-section container flex-center" id="duvidas">
+    <h2 class="display-md">Dúvidas</h2>
     <div class="item">
       <input type="checkbox" id="check1">
       <label for="check1">O que é Raiva?</label>
@@ -162,33 +170,40 @@
     </div>
   </section>
 
-  </main>
-
-
-  <!-- ====== Footer ====== -->
+  <!-- Footer -->
   <footer class="main-footer flex-center">
-    <img src="assets/img/svg/logo.svg" alt="Mypets" />
+    <img src="/assets/img/logo.svg" alt="Logo da Mypets" />
     <ul class="social-media">
       <li>
         <a href="#">
-          <i class="ri-twitter-line"></i>
+          <i class="ri-twitter-fill"></i>
         </a>
       </li>
       <li>
         <a href="#">
-          <i class="ri-instagram-line"></i>
+          <i class="ri-instagram-fill"></i>
         </a>
       </li>
       <li>
         <a href="#">
-          <i class="ri-facebook-line"></i>
+          <i class="ri-facebook-fill"></i>
         </a>
       </li>
     </ul>
-    <p>© 2021 Mypets | Todos os direitos reservados</p>
+    <p>© 2025 Mypets | Todos os direitos reservados</p>
   </footer>
 
-  <!-- ====== Js ====== -->
+  <!-- Seções Futuras
+  - Beneficios da vacinação
+  - Passos da vacinação
+  - Serviços (Ancorado no menu)
+  - Equipe (Ancorado no menu)
+  - Testemunhos (Ancorado no menu)
+  - Apoio
+  -Footer
+  -->
+
+  <!-- Js -->
   <script src="assets/js/script.js"></script>
 </body>
 

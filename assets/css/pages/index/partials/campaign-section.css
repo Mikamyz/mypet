@@ -1,0 +1,41 @@
+.campaign-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+
+.campaign-section h2 {
+  max-width: 355px;
+
+}
+
+.campaign-section .text-box p {
+  max-width: 540px;
+  margin: 16px 0;
+}
+
+.campaign-section h3 {
+  margin-bottom: 16px;
+}
+
+.campaign-section ul {
+  gap: 8px;
+}
+
+.campaign-section ul li {
+  align-items: center;
+  gap: 8px;
+}
+
+.campaign-section .cta {
+  text-align: center;
+  grid-column: 1/3;
+}
+
+.campaign-section .cta a {
+  display: inline-block;
+  margin-top: 40px;
+  text-decoration: underline;
+  color: var(--primary-600);
+}

@@ -18,6 +18,11 @@ nav {
   list-style: none;
 }
 
+.nav-link {
+  font-size: var(--body-sm);
+  font-weight: 500;
+}
+
 .nav-link:hover {
   color: var(--primary-600);
 }
@@ -26,8 +31,7 @@ nav {
   display: none;
 }
 
-/* == mobile menu == */
-
+/* Responsive Menu */
 @media only screen and (max-width: 767px) {
   #btn-mobile {
     display: block;

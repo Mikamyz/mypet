@@ -1,6 +1,9 @@
 .faq-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  flex-direction: column;
+}
+
+.faq-section h2 {
+  margin-bottom: 64px;
 }
 
 .faq-section>div,
@@ -22,9 +25,8 @@ li {
   background: var(--neutral-50);
   color: var(--neutral-500);
   cursor: pointer;
-  padding: 24px 8px;
+  padding: 24px;
 }
-
 
 .item>ul {
   width: 100%;
@@ -33,6 +35,14 @@ li {
   max-height: 0;
   transition: all .4s linear;
   padding: 0;
+}
+
+.item li {
+  max-width: 540px;
+  padding: 8px 24px;
+  font-size: var(--body-sm);
+  line-height: 1.8;
+  color: var(--neutral-700);
 }
 
 .item>input {

@@ -3,19 +3,27 @@
 - Displays Headlines Sizes
 - Headline Font Sizes
 - Body Font Sizes
+- Weights
 obs: converter pra rem dps
 */
 :root {
-
   --font-family: 'DM Sans', sans-serif;
-
+  --display-2xl: 72px;
+  --display-xl: 70px;
   --display-lg: 48px;
   --display-md: 36px;
-
+  --display-sm: 30px;
+  --display-xs: 24px;
+  --body-xl: 20px;
+  --body-lg: 18px;
   --body-md: 16px;
   --body-sm: 14px;
+  --body-xs: 12px;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-sembold: 600;
+  --weight-bold: 700;
 }
-
 
 /* Colors 
 - Primay
@@ -23,12 +31,10 @@ obs: converter pra rem dps
 */
 
 :root {
-
-  --primary-600: #138854;
-
+  --primary-600: #138A8E;
+  --primary-700: #146D71;
   --neutral-50: #F9FAFB;
   --neutral-500: #6B7280;
   --neutral-800: #1F2937;
   --neutral-700: #374151;
-
 }

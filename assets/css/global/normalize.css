@@ -27,7 +27,7 @@ a {
 
 p,
 a {
-  font-size: var(--body-lg);
+  font-size: var(--body-md);
   line-height: 1.8;
   color: var(--neutral-700);
 }
@@ -39,6 +39,10 @@ ul {
 img {
   max-width: 100%;
   display: block;
+}
+
+section {
+  height: 1024px;
 }
 
 ::selection {

@@ -15,7 +15,7 @@
 /* Global Styles */
 .container {
   max-width: 1140px;
-  padding: 64px 15px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -44,6 +44,10 @@
   font-size: var(--display-md);
 }
 
+.display-sm {
+  font-size: var(--display-sm);
+}
+
 .display-xs {
   font-size: var(--display-xs);
 }
@@ -69,7 +73,7 @@
 
 .btn-md {
   padding: 8px 40px;
-  font-size: var(--body-lg);
+  font-size: var(--body-md);
 }
 
 .btn-lg {

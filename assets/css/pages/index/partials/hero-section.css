@@ -8,7 +8,6 @@
 }
 
 .hero-section p {
-  font-size: var(--body-lg);
   max-width: 445px;
   margin: 16px 0;
 }

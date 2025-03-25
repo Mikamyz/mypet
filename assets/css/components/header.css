@@ -20,7 +20,6 @@ nav {
 
 .nav-link {
   font-size: var(--body-sm);
-  font-weight: 500;
 }
 
 .nav-link:hover {

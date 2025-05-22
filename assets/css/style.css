@@ -1,10 +1,10 @@
 /* Hero Section */
 .hero-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   gap: 30px;
-  height: 100vh;
+  height: 90vh;
 }
 
 .hero-section h1 {
@@ -16,79 +16,54 @@
   margin: 24px 0;
 }
 
-
-
-.title {
-  font-size: 40px;
-  color: #7b61ff;
-}
-
-.flexDiv {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-}
-
-.btns {
-  background-color: #7B61FF;
-  color: #fff;
-  width: 215px;
-  height: 46px;
-  border-radius: 5px;
-  border: none;
-  text-transform: uppercase;
-  transition: all 200ms ease;
-  font-weight: 600;
-  letter-spacing: .5px;
-}
-
-.btns:hover {
-  background-color: #9581FF;
-}
-
-.btns:active {
-  background-color: #B0A0FF;
-}
-
-.cronograma .title,
-.duvidas .title {
-  text-align: center;
-}
-
-.cronograma {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 90px;
-}
-
-.duvidas {
+/* About Section */
+.about-section .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 90px;
+  grid-template-columns: repeat(2, 540px);
+  align-items: center;
+  gap: 30px;
 }
 
-.duvidas>div,
-.item {
-  grid-column: 2/3;
+.about-section h2 {
+  max-width: 370px;
+}
+
+.about-section p {
+  margin: 24px 0;
+}
+
+/* Timeline Section */
+.timeline-section {
+  gap: 30px;
+  flex-direction: column;
+}
+
+.faq-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.faq-section h2 {
+  margin-bottom: 40px;
 }
 
 .item>label {
   display: flex;
   align-items: center;
-  border-radius: 4px;
-  width: 640px;
-  height: 50px;
-  color: #797979;
-  font-weight: 600;
+  width: 540px;
+  padding: 8px 24px;
+  background: var(--light);
+  color: var(--gray);
   cursor: pointer;
-  border: 3px solid #D2D2D2;
-  padding-left: 12px;
+  border-radius: 40px;
 }
 
 .item>label:hover {
   transition: all 200ms ease;
-  color: #D2D2D2;
+  background: var(--primary);
+  color: var(--light);
 }
 
 .item>ul {
@@ -98,6 +73,13 @@
   max-height: 0;
   transition: all .4s linear;
   padding: 0;
+}
+
+.item>ul li {
+  max-width: 540px;
+  padding: 0 24px;
+  color: var(--gray);
+  line-height: 1.6;
 }
 
 .item>input {
@@ -111,46 +93,43 @@
 }
 
 .item>input:checked~label {
-  background-color: #7B61FF;
+  background: var(--primary);
   border: none;
   color: #fff;
-  padding-left: 12px;
 }
 
+/* Page Ficha Online */
 
-@media only screen and (max-width: 900px) {
-
-  .hero,
-  .sobre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .sobre {
-    flex-direction: column-reverse;
-  }
-
-  .grid {
-    margin: 0 50px;
-  }
-
-  .grid>p {
-    margin: 15px 0;
-  }
-
-  .grid>img {
-    margin: 20px 0;
-  }
-
-  .cronograma {
-    margin-top: 90px;
-  }
+/* Inner Hero Section */
+.inner-hero-section {
+  background: url("/assets/img/inner-bg.png") no-repeat center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media only screen and (max-width: 570px) {
-  .item>label {
-    width: 440px;
-    height: 70px;
-  }
+.inner-hero-section h1 {
+  color: var(--light);
+}
+
+/* Forms Section */
+
+.forms-section {
+  display: grid;
+  grid-template-columns: repeat(2, 540px);
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.forms-box h2 {
+  margin: 40px 0;
+}
+
+.forms-box form {
+  display: grid;
+  grid-template-columns: repeat(2, 255px);
+  gap: 30px;
 }

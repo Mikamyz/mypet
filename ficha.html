@@ -2,92 +2,173 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ====== Seo ====== -->
-    <meta name="description" content="Campanha de vacinação contra a raiva 2022">
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Mypet | Campanha de vacinação contra a raiva 2022" />
-    <meta property="og:description" content="Vacinação contra a raiva 2022" />
-    <meta property="og:url" content="http://mypet.com" />
-    <meta property="og:image" content="/" />
-    <!-- ====== Css ====== -->
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- ====== Fonts ====== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <!-- ====== Icons ====== -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <!-- ====== Fav Icon ====== -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <title>Ficha Online | Crie sua ficha</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Seo -->
+  <meta name="description" content="Campanha de vacinação contra a raiva 2025" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mypet | Campanha de vacinação contra a raiva 2025" />
+  <meta property="og:description" content="Vacinação contra a raiva 2025" />
+  <meta property="og:url" content="http://mypet.com.br" />
+  <meta property="og:image" content="/" />
+  <!-- Css -->
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Remix Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- Fav Icon -->
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+  <title>My Pet - Faça sua ficha</title>
 </head>
 
 <body>
 
-    <!-- ====== Header ====== -->
-    <header class="main-header flex">
-        <a href="index.html" class="logo">
-            <img src="assets/img/svg/logo.svg" alt="Mypet">
+  <!-- Header -->
+  <header class="header flex">
+    <a href="index.html">
+      <img src="assets/img/Logo.svg" alt="Logotipo da My Pet" />
+    </a>
+    <nav class="navbar" id="navbar">
+      <!-- Menu Mobile -->
+      <button id="btn-mobile">
+        <span id="ham-btn"></span>
+      </button>
+      <ul class="nav-links flex" id="nav-links">
+        <li>
+          <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li>
+          <a href="#sobre" class="nav-link">Sobre</a>
+        </li>
+        <li>
+          <a href="#cronograma" class="nav-link">Cronograma</a>
+        </li>
+        <li>
+          <a href="#equipe" class="nav-link">Equipe</a>
+        </li>
+        <li>
+          <a href="#duvidas" class="nav-link">Dúvidas</a>
+        </li>
+        <li>
+          <a href="ficha.html" class="nav-link">Ficha Online</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Inner Hero Section -->
+  <section class="inner-hero-section">
+    <h1>Ficha Online</h1>
+  </section>
+
+  <!-- Forms Section -->
+  <section class="forms-section">
+    <div class="forms-box">
+      <div>
+        <h2>Dados Pessoais</h2>
+      </div>
+      <!-- Form Dono -->
+      <form action="#">
+        <div>
+          <!-- Nome -->
+          <label for="#">Nome</label>
+          <input type="text" placeholder="Seu nome" required>
+        </div>
+        <div>
+          <!-- CPF -->
+          <label for="#">CPF</label>
+          <input type="text" placeholder="000.000.000-00" required>
+        </div>
+        <div>
+          <!-- E-mail -->
+          <label for="#">E-mail</label>
+          <input type="email" placeholder="Seu e-mail" required>
+        </div>
+        <div>
+          <!-- Telefone -->
+          <label for="#">Telefone</label>
+          <input type="email" placeholder="(00) 00000-0000" required>
+        </div>
+        <div>
+          <!-- Endereço -->
+          <label for="#">Endereço</label>
+          <input type="email" placeholder="Nome e número" required>
+        </div>
+        <div>
+          <!-- Bairro -->
+          <label for="#">Bairro</label>
+          <input type="email" placeholder="Nome e número" required>
+        </div>
+      </form>
+
+      <!-- Form Pet -->
+      <div>
+        <h2>Dados do Pet</h2>
+      </div>
+      <form action="#">
+        <div>
+          <!-- Nome -->
+          <label for="#">Nome</label>
+          <input type="text" placeholder="Nome do seu pet" required>
+        </div>
+        <div>
+          <!-- CPF -->
+          <label for="#">Idade</label>
+          <input type="text" placeholder="00" required>
+        </div>
+        <div>
+          <!-- Peso -->
+          <label for="#">Peso</label>
+          <input type="text" placeholder="00kg" required>
+        </div>
+        <div>
+          <!-- Raça -->
+          <label for="#">Raça</label>
+          <input type="email" placeholder="Raça do seu pet" required>
+        </div>
+      </form>
+      <a href="#" class="btn btn-primary">Enviar</a>
+    </div>
+
+    <div class="form-img">
+      <img src="assets/img/ficha-img.png" alt="#">
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer flex-center">
+    <img src="assets/img/Logo.svg" alt="#" />
+    <ul class="social-media">
+      <li>
+        <a href="#">
+          <i class="ri-facebook-fill"></i>
         </a>
-        <nav class="navbar" id="navbar">
-            <!-- === menu ham === -->
-            <button id="btn-mobile">
-                <span id="ham-btn"></span>
-            </button>
-            <ul class="nav-links flex" id="nav-links">
-                <li class="nav-item">
-                    <a href="#sobre" class="nav-link">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#cronograma" class="nav-link">Cronograma</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#duvidas" class="nav-link">Dúvidas</a>
-                </li>
-                <li class="nav-item">
-                    <a href="ficha.html" class="nav-link">Ficha Online</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+      </li>
+      <li>
+        <a href="#">
+          <i class="ri-instagram-fill"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="ri-linkedin-fill"></i>
+        </a>
+      </li>
+    </ul>
+    <p>© 2025 Mypets - Todos os direitos reservados</p>
+  </footer>
 
-    <!-- ====== Form ====== -->
-    <main class="cronograma" id="cronograma">
-
-    </main>
-
-    <!-- ====== Footer ====== -->
-    <footer class="main-footer flex-center">
-
-        <img src="assets/img/svg/logo.svg" alt="Mypets">
-        <ul class="social-media">
-            <li>
-                <a href="#">
-                    <i class="ri-facebook-fill"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="ri-instagram-fill"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="ri-linkedin-box-fill"></i>
-                </a>
-            </li>
-        </ul>
-        <p>© 2022 Mypets | Todos os direitos reservados</p>
-
-    </footer>
-
-    <!-- ====== Js ====== -->
-    <script src="assets/js/script.js"></script>
+  <!-- ====== Js ====== -->
+  <script src="assets/js/script.js"></script>
 
 </body>
 

@@ -1,0 +1,49 @@
+/* # Reset/normalize do estilo base */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+a {
+  color: #4D4D4D;
+  line-height: 1.8;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #7B61FF;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}

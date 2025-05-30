@@ -1,0 +1,42 @@
+/* # Botões, cards, formulários etc. */
+
+.btn {
+  display: inline-block;
+  padding: 16px 24px;
+  font-weight: 600;
+  line-height: 1;
+  border-radius: 40px;
+}
+
+.btn-primary {
+  background-color: #7B61FF;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #604acf;
+}
+
+/* === Inputs === */
+label {
+  font-size: var(--body-small);
+  display: block;
+  margin: 20px 0 16px 0;
+  color: var(--d-60);
+}
+
+input {
+  max-width: 420px;
+  padding: 16px;
+  border: 1px solid var(--d-20);
+  border-radius: 4px;
+}
+
+input:focus {
+  outline-color: var(--p-100);
+  background-color: transparent;
+}
+
+.section-light {
+  background: #F2EFFF;
+}

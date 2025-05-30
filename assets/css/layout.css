@@ -1,0 +1,152 @@
+/* # Estrutura geral: grid, container, header, footer */
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+  gap: 16px;
+}
+
+.social-media i {
+  color: var(--d-60);
+  font-size: var(--h2);
+  border-radius: 30px;
+  transition: all 200ms ease;
+  padding: 8px;
+}
+
+.social-media i:hover {
+  color: var(--white);
+  background-color: var(--primary-dark);
+  transform: translate(-2px);
+  border-radius: 30px;
+}
+
+/* Header */
+
+header {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  height: 10vh;
+}
+
+.nav-links {
+  gap: 24px;
+}
+
+.nav-link:hover {
+  color: #7B61FF;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+/* Mobile Menu */
+@media only screen and (max-width: 767px) {
+  #btn-mobile {
+    display: block;
+    background: none;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+  }
+
+  #nav-links {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 85px;
+    right: 0;
+    z-index: 1000;
+    height: 0px;
+    transition: .6s;
+    visibility: hidden;
+    overflow-y: hidden;
+    text-align: center;
+  }
+
+  #navbar.active #nav-links {
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    height: calc(100vh - 85px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #nav-link {
+    display: block;
+    margin: 40px 10px;
+    transition: all 200ms ease;
+  }
+
+  #ham-btn {
+    display: block;
+    width: 20px;
+    border-top: 2px solid var(--p-100);
+  }
+
+  #ham-btn::after,
+  #ham-btn::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: var(--p-100);
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+
+  #navbar.active #ham-btn {
+    border-top-color: transparent;
+  }
+
+  #nabarv.active #ham-btn {
+    border-top-color: transparent;
+  }
+
+  #navbar.active #ham-btn::before {
+    transform: rotate(135deg);
+  }
+
+  #navbar.active #ham-btn::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+
+/* === Footer === */
+
+.main-footer {
+  flex-direction: column;
+  background-color: var(--W-80);
+  padding: 64px 15px;
+}
+
+.main-footer .social-media {
+  padding: 40px;
+}

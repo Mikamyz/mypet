@@ -1,0 +1,9 @@
+/* # Importa todos os outros arquivos CSS */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url("/assets/css/variables.css");
+@import url("/assets/css/reset.css");
+@import url("/assets/css/components.css");
+@import url("/assets/css/layout.css");
